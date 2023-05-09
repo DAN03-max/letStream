@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/bg-image.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+}
+.header h2{
+    font-size: 35px;
+    color: #fdfbfb;
+}
+.header .sign-in{
+    background: #f51111;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    color: #fdfbfb;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.hero-text{
+    padding-top: 70px;
+    width: 85%;
+    margin: auto;
+}
+.hero-text h1{
+    color: #fdfbfb;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  sans-serif;
+}
+.hero-text p{
+    color: #fdfbfb;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.email-input{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+.email-input input{
+    width: 100%;
+    margin: auto;
+    border: 1px solid #808080;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 10px;
+    color: #fdfbfb;
+    border-radius: 5px;
+}
+.email-input input::placeholder{
+    color: #fdfbfb;
+    font-size: 17px;
+}
+.email-input .get-started{
+    width: 200px;
+    margin: 10px 0;
+    background: #f51111;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #fdfbfb;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.purple-bg{
+    background-color: #3b1525;
+}
+/* cards */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+}
+.card{
+    width: 85%;
+    margin: 15px auto;
+    background: linear-gradient(to right, #d44286 , #44041f);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(255, 254, 254, 0.5);;
+}
+.card img{
+    width: 25%;
+}
+.card h3{
+    font-size: 25px;
+    color: #fdfbfb;
+    margin: 15px 0;
+}
+.card p{
+    font-size: 15px;
+    color: #fdfbfb;
+    margin: 0 0 15px;
+}
+.faq{
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+}
+.faq h2{
+    text-align: left;
+    color: #fdfbfb;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d44286;
+    margin: 20px 0 ;
+    cursor: pointer;
+}
+.questions h4, .fa-plus{
+    color: #fdfbfb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.faq p{
+    color: #fdfbfb;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.faq-email-input input{
+    width: 85%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 10px;
+    color: #fdfbfb;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.faq-get-started{
+    width: 200px;
+    margin: 10px 0;
+    background: #f51111;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #fdfbfb;
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer{
+    text-align: center;
+    color: #fdfbfb;
+    padding: 10px 0;
+}
+@media screen and (min-width: 704px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+    }   
+}
+@media screen and (min-width: 1349px){
+    .hero-text h1{
+        font-size: 74px;
+    }
+    .email-input input{
+        width: 50%;
+        margin: 20px 0 0;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 20px;
+    }
+}
