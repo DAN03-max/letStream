@@ -65,6 +65,11 @@ body{
     color: #fdfbfb;
     border-radius: 5px;
 }
+.email-input input:focus{
+    outline: none;
+    border-bottom: 2px solid #fdfbfb;
+    background-color: rgba(0,0,0,1);
+}
 .email-input input::placeholder{
     color: #fdfbfb;
     font-size: 17px;
@@ -80,6 +85,10 @@ body{
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.email-input .get-started:hover{
+    transform: scale(0.9);
 }
 .purple-bg{
     background-color: #3b1525;
@@ -96,9 +105,11 @@ body{
     background: linear-gradient(to right, #d44286 , #44041f);
     padding: 30px 20px;
     border-radius: 10px;
+    transition: 0.5s ease-in-out all;
 }
 .card:hover{
-    box-shadow: 0 0 20px 0 rgba(255, 254, 254, 0.5);;
+    box-shadow: 0 0 20px 0 rgba(255, 254, 254, 0.5);
+    transform: scale(1.03);
 }
 .card img{
     width: 25%;
@@ -119,23 +130,69 @@ body{
     padding-top: 50px;
 }
 .faq h2{
-    text-align: left;
+    text-align: center;
     color: #fdfbfb;
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 40px;
+}
+.q-and-a{
+    background-color: #d44286;
+    margin-bottom: 20px;
 }
 .questions{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #d44286;
-    margin: 20px 0 ;
-    cursor: pointer;
 }
-.questions h4, .fa-plus{
+.questions h4{
     color: #fdfbfb;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.fa-plus{
+    color: #fdfbfb;
+    cursor: pointer;
+}
+.answer1{
+    color: #fdfbfb;
+    font-size: 20px;
+    transition: 0.5s ease-in-out all;
+    height: 0px;
+    overflow: hidden;
+}
+.answer2{
+    color: #fdfbfb;
+    font-size: 20px;
+    transition: 0.5s ease-in-out all;
+    height: 0px;
+    overflow: hidden;
+}
+.answer3{
+    color: #fdfbfb;
+    font-size: 20px;
+    transition: 0.5s ease-in-out all;
+    height: 0px;
+    overflow: hidden;
+}
+.answer4{
+    color: #fdfbfb;
+    font-size: 20px;
+    transition: 0.5s ease-in-out all;
+    height: 0px;
+    overflow: hidden;
+}
+.answer5{
+    color: #fdfbfb;
+    font-size: 20px;
+    transition: 0.5s ease-in-out all;
+    height: 0px;
+    overflow: hidden;
+}
+.show-answer{
+    height: 50px;
+    padding: 20px;
+    border-top: 1px solid #fdfbfb;
 }
 .faq p{
     color: #fdfbfb;
@@ -149,6 +206,12 @@ body{
     color: #fdfbfb;
     border-radius: 5px;
     margin: 10px 0;
+    border: none;
+}
+.faq-email-input input:focus{
+    outline: none;
+    border-bottom: 2px solid #fdfbfb;
+    background-color: rgba(0,0,0,1);
 }
 .faq-get-started{
     width: 200px;
@@ -160,6 +223,10 @@ body{
     color: #fdfbfb;
     font-weight: bold;
     font-size: 18px;
+    transition: 0.5s all ease-in-out;
+}
+.faq-get-started:hover{
+    transform: scale(0.9);
 }
 .footer{
     text-align: center;
